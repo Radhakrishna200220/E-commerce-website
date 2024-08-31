@@ -1,0 +1,162 @@
+@import url('https://fonts.cdnfonts.com/css/samsung-sans-4');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Samsung Sans', sans-serif;
+
+}
+body{
+    background: black;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#000;
+    color: white;
+    position: fixed;
+    right: 0;
+    width: 100%;
+}
+.logo span{
+    font-size: medium;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-left:5px;
+  
+}
+
+.search-box{
+    display: flex;
+    flex:1;
+    margin:10px;
+}
+.search-box input{
+    display: flex;
+    flex: 1;
+    padding: 5px 10px;
+    border: none;
+    border-color: blanchedalmond;
+    border-radius: 5px 0px 0px 5px;
+    margin: 2px 0px;
+}
+.search-box input::placeholder{
+    font-weight: 400;
+    font-family: 'Samsung Sans', sans-serif;
+    text-transform: capitalize;
+    color: #000;
+}
+.search-box button{
+    align-items: center;
+    padding: 2px;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    margin-left: 1px;
+}
+.nav-link a{
+   margin-left: 12px;
+   margin-right: 10px;
+   font-weight: 600;
+   text-decoration: none;
+   color: #fff;
+}
+.nav-link a:hover{
+    text-decoration: underline;
+
+}
+
+.nav-icon img{
+    width: 32px;
+    margin-right: 12px;
+    border-radius: 10px;
+}
+.photo{
+    /* background-color: #e5aeae; */
+    height: 400px;
+    width: 100%;
+    margin: 8px 0px 8px 0px;
+    background-size: cover;
+    border-radius: 5px;
+    padding-top: 72px;
+}
+.photo img{
+    width: 100%;
+   height: 450px;
+  
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links img{
+    width: 32px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+/*responsive*/
+ @media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+} 
+ 
